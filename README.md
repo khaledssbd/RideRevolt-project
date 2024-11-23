@@ -26,21 +26,19 @@
 - npm init -y
 - npm install express
 - npm install mongoose
-- npm i cors
-- npm i dotenv
+- npm install cors
+- npm install dotenv
 - npm install -D typescript
 - tsc -init
-- npm i -D @eslint/js
-- npm i -D @types/express
-- npm i -D @types/cors
-- npm i -D @typescript-eslint/eslint-plugin
-- npm i -D @typescript-eslint/parser
-- npm i -D eslint@9.14.0
-- npm i -D globals
-- npm i -D prettier
-- npm i -D typescript
-- npm i -D typescript-eslint
-
+- npm install -D @eslint/js
+- npm install -D @types/express
+- npm install -D @types/cors
+- npm install -D @typescript-eslint/eslint-plugin
+- npm install -D @typescript-eslint/parser
+- npm install -D eslint@9.14.0
+- npm install -D globals
+- npm install -D prettier
+- npm install -D typescript-eslint
 
 ---
 
@@ -55,9 +53,7 @@ Before you begin, ensure you have the following installed on your local machine:
 - [Node.js](https://nodejs.org/en/download/) (which includes npm)
 - [Git](https://git-scm.com/)
 
-
 ---
-
 
 ### Installation
 
