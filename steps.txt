@@ -1,0 +1,25 @@
+npm init -y
+npm install express
+npm install mongoose --save
+npm install typescript --save-dev
+npm i cors
+npm i dotenv
+tsc -init
+npm i --save-dev @types/node
+npm i --save-dev @types/express
+
+npm i --save-dev @types/cors
+
+
+npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+// or
+npm i -D eslint@9.14.0 @eslint/js @types/eslint__js typescript typescript-eslint
+
+npx eslint --init
+npm run lint
+npm run lint --fix
+
+npm i -D --exact prettier
+npx prettier --write src/index.ts
+
+npm install --save-dev eslint-config-prettier
