@@ -103,5 +103,7 @@ orderSchema.pre('updateOne', function (next) {
 // product Model
 export const productModel = model<TProduct>('Product', productSchema);
 
+
+
 // order Model
 export const orderModel = model<TOrder>('Order', orderSchema);

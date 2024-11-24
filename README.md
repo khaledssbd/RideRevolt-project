@@ -21,7 +21,7 @@
 
 ---
 
-# npm Packages 📦
+# Used npm Packages 📦
 
 - npm init -y
 - npm install express
@@ -69,7 +69,20 @@ Before you begin, ensure you have the following installed on your local machine:
    npm install
    ```
 
-4. ```bash
+4. Create a .env file inside the "RideRevolt-project" folder and configure the following environment variables accordingly-
+
+```bash
+NODE_ENV=
+
+PORT=
+
+DATABASE_URL=
+
+BCRYPT_SALT_ROUNDS=
+   ```
+
+
+5. ```bash
    npm run start:dev
    ```
 

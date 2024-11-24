@@ -21,7 +21,7 @@ const createOrder = async (req: Request, res: Response) => {
     });
   } catch (err: any) {
     res.status(err.message === 'Product not found' ? 404 : 500).json({
-      message: 'Validation failed',
+      message: err.message || 'Validation failed',
       success: false,
       error: {
         name: err.name,

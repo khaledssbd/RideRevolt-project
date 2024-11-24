@@ -13,6 +13,7 @@ const zodProductValidationSchema = z.object({
     .trim()
     .min(1, { message: 'Brand is required' })
     .max(35, { message: 'Brand cannot exceed 35 characters' }),
+  
   price: z.number().min(1, 'Price must be a positive number'),
 
   category: z.enum(['Mountain', 'Road', 'Hybrid', 'Electric'], {
