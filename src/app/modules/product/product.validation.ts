@@ -13,7 +13,7 @@ const zodProductValidationSchema = z.object({
     .trim()
     .min(1, { message: 'Brand is required' })
     .max(35, { message: 'Brand cannot exceed 35 characters' }),
-  
+
   price: z.number().min(1, 'Price must be a positive number'),
 
   category: z.enum(['Mountain', 'Road', 'Hybrid', 'Electric'], {
@@ -33,7 +33,7 @@ const zodProductValidationSchema = z.object({
   inStock: z
     .boolean()
     .refine((value) => typeof value === 'boolean', 'inStock must be a boolean'),
-  
+
   createdAt: z.string().default(() => new Date().toISOString()),
 
   updatedAt: z.string().optional(),

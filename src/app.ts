@@ -17,7 +17,7 @@ app.use('/api', productRoutes);
 app.use('/api', orderRoutes);
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('RideRevolt is Running! 🚴   ⚡');
+  res.send('Hi, Welcome to RideRevolt! 🚴   ⚡');
 });
 
 export default app;

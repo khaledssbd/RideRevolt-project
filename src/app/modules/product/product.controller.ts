@@ -105,7 +105,7 @@ const deleteProductById = async (req: Request, res: Response) => {
     res.status(200).json({
       message: 'Bike deleted successfully',
       status: true,
-      data: result,
+      data: {},
     });
   } catch (err: any) {
     res.status(err.message === 'Invalid Product ID' ? 404 : 500).json({

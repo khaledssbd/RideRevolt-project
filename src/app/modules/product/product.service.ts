@@ -1,5 +1,5 @@
 import { Types } from 'mongoose';
-import { productModel } from '../model';
+import { productModel } from './product.model';
 import { TProduct } from './product.interface';
 
 // create a new product
@@ -36,10 +36,14 @@ const updateProductInDB = async (productID: string, updatedDoc: TProduct) => {
     throw new Error('Invalid Product ID');
   }
 
-  const result = await productModel.updateOne(
+  await productModel.updateOne(
     { _id: new Types.ObjectId(productID) },
     updatedDoc,
   );
+
+  const result = await productModel.findOne({
+    _id: new Types.ObjectId(productID),
+  });
 
   return result;
 };

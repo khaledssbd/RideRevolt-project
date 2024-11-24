@@ -1,6 +1,7 @@
 import { Types } from 'mongoose';
-import { orderModel, productModel } from '../model';
+import { productModel } from '../product/product.model';
 import { TOrder } from './order.interface';
+import { orderModel } from './order.model';
 
 // create a new product
 const createOrderIntoDB = async (orderData: TOrder) => {
@@ -37,8 +38,6 @@ const createOrderIntoDB = async (orderData: TOrder) => {
   return result;
 };
 
-
-
 // read total revenue
 const getTotalRevenueFromDB = async () => {
   const result = await orderModel.aggregate([
@@ -57,7 +56,6 @@ const getTotalRevenueFromDB = async () => {
   ]);
   return result;
 };
-
 
 export const orderServices = {
   createOrderIntoDB,

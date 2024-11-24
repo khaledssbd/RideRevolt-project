@@ -9,9 +9,7 @@ async function main() {
 
     // all app listening will be here
     app.listen(config.port, () => {
-      console.log(
-        `RideRevolt is running on port ${config.port}! 🚴   ⚡`,
-      );
+      console.log(`RideRevolt is running on port ${config.port}! 🚴   ⚡`);
     });
   } catch (err) {
     console.log(err);

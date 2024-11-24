@@ -27,7 +27,8 @@ const zodOrderValidationSchema = z.object({
 
   createdAt: z.string().default(() => new Date().toISOString()),
 
-  updatedAt: z.string().optional(),
+  // updatedAt: z.string().optional(),
+  updatedAt: z.string().default(() => new Date().toISOString()),
 });
 
 export default zodOrderValidationSchema;

@@ -2,7 +2,7 @@
 
 ## Live site 🌐
 
-- [RideRevolt on Vercel](https://assignment-2-mongoose-pi.vercel.app)
+- [RideRevolt on Vercel](https://assignment-2-mongoose-mu.vercel.app)
 
 ---
 
@@ -79,8 +79,7 @@ PORT=
 DATABASE_URL=
 
 BCRYPT_SALT_ROUNDS=
-   ```
-
+```
 
 5. ```bash
    npm run start:dev
