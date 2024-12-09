@@ -23,7 +23,8 @@ const createOrderIntoDB = async (orderData: TOrder) => {
     { _id: new Types.ObjectId(orderData.product) },
     {
       $inc: { quantity: -orderData.quantity },
-      $set: { inStock: product.quantity - orderData.quantity > 0 },
+      // $set: { inStock: product.quantity - orderData.quantity > 0 },
+      $set: { inStock: { $gt: [{ $subtract: ['$quantity', orderData.quantity] }, 0] }, },
     },
   );
 

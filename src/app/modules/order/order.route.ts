@@ -4,8 +4,8 @@ import { orderControllers } from './order.controller';
 const router = express.Router();
 
 // CRUD operations through controller functions
-router.post('/orders', orderControllers.createOrder);
+router.post('/', orderControllers.createOrder);
 
-router.get('/orders/revenue', orderControllers.getTotalRevenue);
+router.get('/revenue', orderControllers.getTotalRevenue);
 
 export const orderRoutes = router;

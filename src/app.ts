@@ -11,10 +11,10 @@ app.use(express.json());
 app.use(cors());
 
 // product route
-app.use('/api', productRoutes);
+app.use('/api/products', productRoutes);
 
 // order route
-app.use('/api', orderRoutes);
+app.use('/api/orders', orderRoutes);
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hi, Welcome to RideRevolt! 🚴   ⚡');
