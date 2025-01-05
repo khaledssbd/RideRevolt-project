@@ -14,7 +14,7 @@
 
 # Project Overview 🛠️
 
-- RideRevolt is a Bike-store management web application that has is make on express.js and has different routes (https://assignment-2-mongoose-pi.vercel.app/api/products, https://assignment-2-mongoose-pi.vercel.app/api//orders, https://assignment-2-mongoose-pi.vercel.app/api/orders/revenue) for different requests.
+- RideRevolt is a Bike-store management web application that is made on express.js and has different routes (https://assignment-2-mongoose-pi.vercel.app/api/products, https://assignment-2-mongoose-pi.vercel.app/api//orders, https://assignment-2-mongoose-pi.vercel.app/api/orders/revenue) for different requests.
 - CRUD operations are implemented for product Model
 - For every order the product quentity decreases accordingly.
 - user can see the sum of all totalPrice from order Model as totalRevenue
