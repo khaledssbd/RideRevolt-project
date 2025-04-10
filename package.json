@@ -1,7 +1,31 @@
 {
   "name": "ride_revolt",
-  "version": "1.0.0",
+  "author": {
+    "name": "Khaled Siddique",
+    "email": "khaledssbd@gmail.com",
+    "url": "https://khaled-siddique.vercel.app"
+  },
+  "description": "A fast and lightweight e-commerce platform built with MongoDB, NodeJS, ExpressJS and ReactJS.",
+  "keywords": [
+    "ecommerce",
+    "react",
+    "typescript",
+    "mongoose",
+    "nodejs",
+    "expressjs",
+    "mongodb"
+  ],
+  "license": "ISC",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaledssbd/RideRevolt-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khaledssbd/RideRevolt-project.git/issues"
+  },
+  "homepage": "https://github.com/khaledssbd/RideRevolt-project.git#readme",
+  "version": "1.0.0",
   "scripts": {
     "start": "node ./dist/server.js",
     "start:prod": "node ./dist/server.js",
@@ -12,16 +36,11 @@
     "format": "prettier . --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "mongoose": "^8.8.1",
-    "ts-node-dev": "^2.0.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -31,8 +50,10 @@
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
     "eslint": "^9.14.0",
+    "eslint-config-prettier": "10.0.1",
     "globals": "^15.12.0",
     "prettier": "^3.3.3",
+    "ts-node-dev": "2.0.0",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.14.0"
   }
